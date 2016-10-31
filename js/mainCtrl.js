@@ -26,7 +26,7 @@ angular.module('itunes').controller('mainCtrl', function($scope, itunesService){
 
     //Code here
 
-    $scope.getSongData = function(artist) {
+    $scope.getSongData = function() {
       itunesService.getSongData($scope.artist).then(function(data) {
         $scope.songData = data;
       })
@@ -40,7 +40,7 @@ angular.module('itunes').controller('mainCtrl', function($scope, itunesService){
 
 
 
-  //If everything worked you should see a huge array of objects inside your console. That's great! But unfortunately that's not what ng-grid is expecting. What you need to do now is sort the data you got back. This sounds like a great job for a service! Head back to your itunesService and complete the last instructions there. 
+  //If everything worked you should see a huge array of objects inside your console. That's great! But unfortunately that's not what ng-grid is expecting. What you need to do now is sort the data you got back. This sounds like a great job for a service! Head back to your itunesService and complete the last instructions there.
 
 
 
@@ -52,7 +52,3 @@ angular.module('itunes').controller('mainCtrl', function($scope, itunesService){
 
 
 });
-
-
-
-
